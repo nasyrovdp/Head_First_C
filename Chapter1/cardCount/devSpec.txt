@@ -1,0 +1,8 @@
+Development specifications for card counting program.
+
+Evaluate the card.
+Is it between 3 and 6 (inclusive)?
+    Increase count by 1.
+Otherwise…
+    Is it a 10, J, Q, or K?
+        Decrease the count by 1.
