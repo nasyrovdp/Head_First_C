@@ -29,6 +29,10 @@ int main() {
             }
             default:
                 val = atoi(card_name);
+                if (val < 2 || val > 10) {
+                    puts("That's not a valid card. Try again.");
+                    continue;
+                }
         }
         printf("The card value is: %i\n", val);
         if (val >= 3 && val <= 6) {
