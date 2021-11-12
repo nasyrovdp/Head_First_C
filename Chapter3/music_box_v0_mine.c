@@ -11,10 +11,10 @@ int main() {
     };
     char search_string[80];
     printf("What song are you looking for? - ");
-    fgets(search_string, 80, stdin);
-    for(int i = 0; i < 5; i++) {
-        if(strstr(track_list[i], search_string)) {
-            printf("%s\n", track_list[i]);
+    scanf("%79s", search_string);               /* fgets doesn't work, I don't understand why, it adds "return" at the end */
+    for (int i = 0; i < 5; i++) {
+        if (strcasestr(track_list[i], search_string)) {   /* made it strcasestr to turn off case-sensitive */
+            printf("Track %i: '%s'\n", i, track_list[i]);
         }
     }
     return 0;

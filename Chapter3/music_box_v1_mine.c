@@ -6,13 +6,12 @@ char track_list[][80] = {
     "Newark, Newark - a wonderful town", 
     "Dancing with a Dork", 
     "From here to maternity", 
-    "The girl from Iwo Jima", 
+    "The girl from Iwo Jima"
 };
 
 void find(char search_string[]) {
-    int i;
-    for (i = 0; i < 5; i++) {
-        if (strstr(track_list[i], search_string))
+    for (int i = 0; i < 5; i++) {
+        if (strcasestr(track_list[i], search_string))
             printf("Track %i: '%s'\n", i, track_list[i]);
     }
 }
@@ -20,7 +19,7 @@ void find(char search_string[]) {
 int main() {
     char search_string[80];
     printf("What song are you looking for? - ");
-    fgets(search_string, 80, stdin);
+    scanf("%79s", search_string);
     find(search_string);
     return 0;
 }
