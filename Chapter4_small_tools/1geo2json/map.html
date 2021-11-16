@@ -50,7 +50,7 @@ function init_map(){
               return;
             }
             var lng = data[i].longitude;
-            if ((lng < -180) || (lng > 180)) {
+            if ((lng < -90) || (lng > 90)) {
               alert("Invalid longitude: '" + lng + "'");
               return;
             }
