@@ -9,3 +9,6 @@ snappy_v2: snappy_v2.c
 
 snappy_v3: snappy_v3.c
 	gcc snappy_v3.c -o snappy_v3
+
+snappy_v4: snappy_v4.c
+	gcc snappy_v4.c -o snappy_v4
