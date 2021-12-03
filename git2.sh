@@ -10,8 +10,9 @@
 # git push origin main
 # git push origin -d $varname
 # git branch -d $varname
+git add -A
 git switch main
-git merge dmitry-nasyrov
+git merge desktop
 git push origin main
-git push origin -d dmitry-nasyrov
-git branch -d dmitry-nasyrov
+git push origin -d desktop
+git branch -d desktop
